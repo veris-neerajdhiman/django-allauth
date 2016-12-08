@@ -36,8 +36,7 @@ class OAuth2Client(object):
             'client_id': self.consumer_key,
             'redirect_uri': self.callback_url,
             'scope': self.scope,
-            'response_type': 'code'
-        }
+            'response_type': 'code'        }
         if self.state:
             params['state'] = self.state
         params.update(extra_params)
